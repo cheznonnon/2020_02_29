@@ -1,0 +1,173 @@
+
+
+----------==========----------==========----------==========----------
+
+
+"Eat Your Own Catfood."
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2020/02/29
+
+
+BUGFIX
+
+
+	Nonnon Freecell
+		Auto Move : when a card is clicked
+			OLD : halo redraw error
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	Nonnon Paint
+		Thumbnail : Layout
+			NEW : smarter than older
+			[!] : appear again when Grabber
+		Tablet PC Support
+			OLD : disabled
+			NEW :  enabled
+			[!] : for testing
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2020/02/20
+
+
+BUGFIX
+
+
+	win32/win/debug.c
+		n_win_is_lefthanded() : when not Tablet PC
+			OLD : true is returns
+			NEW : fixed
+			[!] : GetSystemMetrics( SM_TABLETPC ) is needed
+	win32/gdi.c
+		N_GDI_FRAME_RPG
+			OLD : fixed value
+			NEW : overridable
+
+	Marie
+		64-bit Version : High-DPI : Media Player Mode
+			OLD : window size is insufficient
+			NEW : fixed
+	Nonnon FTP
+		source code
+			OLD : useless tab character
+			NEW : removed
+	Nyaurism
+		Resizer : input popup : close : when a popup is appeared
+			OLD : not hide
+			NEW : fixed
+		new file : length
+			OLD :  997 msec.
+			NEW : 1000 msec.
+
+
+NEW_FEATURE
+
+
+	neutral/wav.c
+		n_wav.channel/.bit/.rate
+			NEW : original file spec
+		n_wav_save()
+			NEW : save as original spec available
+
+	win32/win_scrollbar.c
+		performance : at startup
+			NEW : faster than older
+
+	All
+		at window closing
+			NEW : smoother than older
+	_Nekomimi Nina RPG
+		revamped again
+			NEW : more feature available
+		Tips
+			NEW : bounce available
+		Command : Attack/Magic : Nina and Nono
+			NEW : animation available
+		Fanfare/Game Over
+			NEW : stop input while BGM playback
+	Nonnon Paint
+		Resizer : Preview
+			OLD : alpha is not used
+			NEW : used
+			[!] : heavier than older
+	Nyaurism
+		Formatter
+			NEW : display original file spec
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2020/02/10
+
+
+BUGFIX
+
+
+	game/sound/mci.c
+		64-bit Version
+			OLD : crash
+			NEW : fixed
+			[!] : cast to (DWORD_PTR) is needed
+	game/sound/vfw.c
+		n_vfw_stop()
+			OLD : not rewind
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	game/sound/*.c
+		n_*_stop()
+			NEW : stop playback
+		n_*_pause(), resume()
+			NEW : tweaker available
+	game/sound.c
+		n_game_sound_stop()
+			NEW : stop playback
+		n_game_sound_pause(), resume()
+			NEW : tweaker available
+
+	_Frame_Test
+		released
+			NEW : animation engine
+			[!] : write INI file and drop to .EXE/.LNK
+	_Sound_Test
+		released
+			NEW : game layer checker
+	_Nekomimi Nina RPG
+		revamped
+			NEW : new version available
+			[!] : but game system is the same
+		game : sprite animation
+			NEW : a little rich
+		performance
+			NEW : faster/lighter/smoother than older
+	Nonnon Paint
+		Thumbnail : Grabber is ON
+			NEW : hide
+			[!] : for usability
+
+
+----------==========----------==========----------==========----------
+
